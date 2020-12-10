@@ -1,8 +1,7 @@
-{/*import "./App.css";
-import { db } from "./firebase";
-import { auth } from "./firebase";
+import "./App.css";
+import { db, auth } from "./firebase";
 import React, { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { Button, Input } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -147,7 +146,8 @@ function App() {
           <Redirect to="/Home_Page" />
         )
       ) : (
-        <div>
+        <div className="test">
+          <h1>heyy</h1>
           <Button onClick={() => setOpen(true)}>SignUp</Button>
           <Button onClick={() => setOpenSignin(true)}>Login</Button>
         </div>
@@ -157,4 +157,3 @@ function App() {
 }
 
 export default App;
-*/}
